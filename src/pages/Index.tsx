@@ -230,8 +230,8 @@ export default function Index() {
         </section>
 
         {/* Work Section */}
-        <section id="work" className="py-32 px-8">
-          <div className="max-w-7xl mx-auto lg:px-32 px-8 py-8">
+        <section id="work" className="py-32">
+          <div className="max-w-7xl mx-auto lg:px-32 md:px-8 px-8 py-8">
             <motion.div
               className="mb-32"
               initial={{ opacity: 0, y: 50 }}
@@ -378,10 +378,10 @@ export default function Index() {
           id="about"
           className="py-32 px-8 bg-[#111111] lg:px-32 max-w-7xl mx-auto"
         >
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-7xl mx-auto ">
             <div className="grid grid-cols-12 gap-16">
               <motion.div
-                className="col-span-12 lg:col-span-6"
+                className="col-span-6 lg:col-span-6"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -500,8 +500,8 @@ export default function Index() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="py-32 px-8">
-          <div className="max-w-7xl mx-auto text-center lg:px-32 px-8 py-8">
+        <section id="contact" className="lg:py-32 pb-12 px-8">
+          <div className="max-w-7xl mx-auto text-center lg:px-32">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
