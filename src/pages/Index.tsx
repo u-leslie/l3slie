@@ -307,9 +307,9 @@ export default function Index() {
                         >
                           <div className="flex items-center gap-3 text-white">
                             <Play className="size-5" />
-                            <span className="text-sm font-light">
+                            <a className="text-sm font-light" href={project.link}>
                               View Project
-                            </span>
+                            </a>
                           </div>
                         </motion.div>
                       </motion.div>
@@ -358,7 +358,7 @@ export default function Index() {
                         transition={{ duration: 0.3 }}
                       >
                         <a
-                          href="#"
+                          href={project.link}
                           className="inline-flex items-center gap-2 text-sm font-light border-b border-white/30 pb-1 hover:border-white transition-colors duration-300"
                         >
                           Explore project
