@@ -372,7 +372,7 @@ export default function Index() {
                         Explore project
                         <ArrowUpRight className="size-3" />
                       </a>
-                      <p>{project.status}</p>
+                      {/* <p>{project.status}</p> */}
                     </motion.div>
                   </motion.div>
                 </motion.div>
