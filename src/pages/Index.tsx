@@ -179,8 +179,9 @@ export default function Index() {
               animate={{ y: 0, opacity: 0.7 }}
               transition={{ delay: 1.8, duration: 0.8 }}
             >
-              I design and develop exceptional digital products that live at the
-              intersection of design, technology, and human experience.
+              I’m Uhiriwe Anne Leslie, creating digital products where design
+              and code come together to deliver smooth, user-friendly
+              experiences.{" "}
             </motion.p>
 
             <motion.div
@@ -399,14 +400,14 @@ export default function Index() {
                   <div className="space-y-6 text-base font-light md:leading-relaxed opacity-80">
                     <p>
                       With over 4 years of experience in digital design and
-                      development, I specialize in creating sophisticated web
-                      experiences that seamlessly blend aesthetics with
-                      functionality.
+                      development, I create web experiences that balance
+                      aesthetics and functionality.
                     </p>
                     <p>
-                      My work spans across various industries, from fintech to
-                      creative agencies, always focusing on user-centered design
-                      principles and cutting-edge technology.
+                      My work spans diverse digital projects, from e-portfolio
+                      and CSR platforms to management systems and modern web
+                      applications, always focusing on user-centered design and
+                      cutting-edge technology.
                     </p>
                   </div>
 
