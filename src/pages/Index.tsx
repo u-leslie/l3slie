@@ -6,6 +6,7 @@ import {
   useSpring,
 } from "motion/react";
 import { useState, useEffect } from "react";
+import {projects } from "../constants/data.ts";
 import {
   ExternalLink,
   Github,
@@ -41,67 +42,7 @@ export default function Index() {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, [mouseX, mouseY]);
 
-  const projects = [
-    {
-      year: "2024",
-      title: "E-Portfolio Platform",
-      category: "RTB Platform",
-      description:
-        "Innovative e-portfolio platform for TVET schools management",
-      tech: ["Next.js", "Tailwindcss"],
-      //   link:"https://e-portfolio.rtb.gov.rw",
-      status: "Under Development phase",
-    },
-    {
-      year: "2024",
-      title: "CSR Platform",
-      category: "Corporate Social Responsibility",
-      description:
-        "E-learning platform for corporate social responsibility initiatives",
-      tech: ["Next.js", "Tailwindcss"],
-      //   link:"https://csr.vercel.app",
-      status: "Under Development phase",
-    },
-    {
-      year: "2024",
-      title: "RiseWell Website",
-      category: "RiseWell Organisation",
-      description: "Empowering wellness with a modern web experience",
-      link: "https://risewell-web.vercel.app",
-      tech: ["Next.js", "Tailwindcss"],
-      status: "Under Development phase",
-    },
-    {
-      year: "2024 - 2025",
-      title: "Grant Management System",
-      category: "RTB Platform",
-      description:
-        "Revolutionary TVET grant management experience with modern web app",
-      tech: ["React", "Next JS", "TailwindCss"],
-      link: "http://197.243.20.222:5800/",
-      status: "Live",
-    },
-    {
-      year: "2024 - 2025",
-      title: "TVET Management Portal",
-      category: "RTB Platform",
-      description:
-        "Comprehensive TVET management portal for streamlined operations",
-      tech: ["ReactJS", "Next JS"],
-      link: "https://tvetmanagement.rtb.gov.rw/",
-      status: "Live",
-    },
-    {
-      year: "2023 - 2024",
-      title: "Topstrate Web App",
-      category: "Topskills Company",
-      link: "https://topstrate.com",
-      description:
-        "Modern web app for TopSkills, a strategic plan management company",
-      tech: ["Next.js", "Tailwindcss"],
-      status: "Live",
-    },
-  ];
+
 
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white overflow-x-hidden">
@@ -289,9 +230,9 @@ export default function Index() {
 
         {/* Work Section */}
         <section id="work" className="py-32 px-8">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-7xl mx-auto lg:px-32 px-8 py-8">
             <motion.div
-              className="mb-32 lg:px-32 px-8 py-8 max-w-7xl mx-auto"
+              className="mb-32"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -305,76 +246,126 @@ export default function Index() {
               </h2>
             </motion.div>
 
-            <div className="space-y-32">
+            <div className="space-y-40">
               {projects.map((project, index) => (
                 <motion.div
                   key={project.title}
                   className="group cursor-pointer"
-                  initial={{ opacity: 0, y: 50 }}
+                  initial={{ opacity: 0, y: 100 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{
-                    duration: 0.8,
+                    duration: 1.2,
                     ease: [0.22, 1, 0.36, 1],
-                    delay: index * 0.15,
+                    delay: index * 0.2,
                   }}
                   whileHover="hover"
                 >
-                  <motion.div
-                    className="max-w-3xl mx-auto space-y-6 text-center lg:text-left"
-                    variants={{
-                      hover: { x: index % 2 === 0 ? 10 : -10 },
-                    }}
-                    transition={{ duration: 0.4 }}
+                  <div
+                    className={`grid grid-cols-12 gap-8 items-center ${index % 2 === 1 ? "lg:grid-flow-col-dense" : ""}`}
                   >
-                    {/* Meta info */}
-                    <div className="flex items-center justify-center lg:justify-start gap-4 text-sm font-light opacity-60">
-                      <span>{project.year}</span>
-                      <span>•</span>
-                      <span>{project.category}</span>
-                    </div>
+                    {/* Project Image */}
+                    <motion.div
+                      className={`col-span-12 lg:col-span-7 relative overflow-hidden ${index % 2 === 1 ? "lg:col-start-6" : ""}`}
+                      variants={{
+                        hover: { scale: 0.98 },
+                      }}
+                      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+                    >
+                      <motion.div
+                        className="aspect-[16/10] bg-gradient-to-br from-gray-900 to-black rounded-3xl overflow-hidden relative"
+                        variants={{
+                          hover: { scale: 1.02 },
+                        }}
+                        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+                      >
+                        <img
+                          src={project.image}
+                          alt={project.title}
+                          className="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-500"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
 
-                    {/* Title */}
-                    <h3 className="text-[clamp(1.5rem,3vw,2.5rem)] font-light leading-tight">
-                      {project.title}
-                    </h3>
-
-                    {/* Description */}
-                    <p className="text-base font-light leading-relaxed opacity-70">
-                      {project.description}
-                    </p>
-
-                    {/* Skills / Tech */}
-                    <div className="flex flex-wrap justify-center lg:justify-start gap-2">
-                      {project.tech.map((tech, techIndex) => (
-                        <motion.span
-                          key={tech}
-                          className="text-xs font-light px-3 py-1 border border-white/20 rounded-full"
+                        <motion.div
+                          className="absolute top-6 right-6"
                           initial={{ opacity: 0, scale: 0.8 }}
                           whileInView={{ opacity: 1, scale: 1 }}
-                          transition={{ delay: 0.05 * techIndex }}
+                          transition={{ delay: 0.5 }}
                         >
-                          {tech}
-                        </motion.span>
-                      ))}
-                    </div>
+                          <Badge className="bg-white/10 border-white/20 text-white backdrop-blur-sm">
+                            {project.status}
+                          </Badge>
+                        </motion.div>
 
-                    {/* Link */}
-                    <motion.div
-                      className="pt-4 flex gap-10"
-                      whileHover={{ x: 6 }}
-                      transition={{ duration: 0.3 }}
-                    >
-                      <a
-                        href={project.link ?? "#"}
-                        className="inline-flex items-center gap-2 text-sm font-light border-b border-white/30 pb-1 hover:border-white transition-colors duration-300"
-                      >
-                        Explore project
-                        <ArrowUpRight className="size-3" />
-                      </a>
-                      {/* <p>{project.status}</p> */}
+                        <motion.div
+                          className="absolute bottom-8 left-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                          variants={{
+                            hover: { y: 0, opacity: 1 },
+                          }}
+                          initial={{ y: 20, opacity: 0 }}
+                        >
+                          <div className="flex items-center gap-3 text-white">
+                            <Play className="size-5" />
+                            <span className="text-sm font-light">
+                              View Project
+                            </span>
+                          </div>
+                        </motion.div>
+                      </motion.div>
                     </motion.div>
-                  </motion.div>
+
+                    {/* Project Info */}
+                    <motion.div
+                      className={`col-span-12 lg:col-span-5 space-y-6 ${index % 2 === 1 ? "lg:col-start-1 lg:row-start-1" : ""}`}
+                      variants={{
+                        hover: { x: index % 2 === 0 ? 20 : -20 },
+                      }}
+                      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+                    >
+                      <div className="space-y-2">
+                        <div className="flex items-center gap-4 text-sm font-light opacity-60">
+                          <span>{project.year}</span>
+                          <span>•</span>
+                          <span>{project.category}</span>
+                        </div>
+                        <h3 className="text-[clamp(1.5rem,3vw,2.5rem)] font-light leading-tight">
+                          {project.title}
+                        </h3>
+                      </div>
+
+                      <p className="text-base font-light leading-relaxed opacity-70">
+                        {project.description}
+                      </p>
+
+                      <div className="flex flex-wrap gap-2">
+                        {project.tech.map((tech, techIndex) => (
+                          <motion.span
+                            key={tech}
+                            className="text-xs font-light px-3 py-1 border border-white/20 rounded-full"
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ delay: 0.1 * techIndex }}
+                          >
+                            {tech}
+                          </motion.span>
+                        ))}
+                      </div>
+
+                      <motion.div
+                        className="pt-4"
+                        whileHover={{ x: 10 }}
+                        transition={{ duration: 0.3 }}
+                      >
+                        <a
+                          href="#"
+                          className="inline-flex items-center gap-2 text-sm font-light border-b border-white/30 pb-1 hover:border-white transition-colors duration-300"
+                        >
+                          Explore project
+                          <ArrowUpRight className="size-3" />
+                        </a>
+                      </motion.div>
+                    </motion.div>
+                  </div>
                 </motion.div>
               ))}
             </div>
