@@ -417,7 +417,7 @@ export default function Index() {
                     className="pt-4"
                   >
                     <a
-                      href="https://docs.google.com/document/d/1gJI2QopVwrJ5ZKFF9Vw6gA6OLygRsa_4/edit?usp=sharing&ouid=114032536704967458203&rtpof=true&sd=true"
+                      href="https://docs.google.com/document/d/1v6ctfIN5Qyp9rQWTW8hO6Tmo_B-z-DwcUgXN499r8dQ/edit?tab=t.0#heading=h.4vmqsaxv4wrb"
                       className="inline-flex items-center gap-2 text-sm font-light border-b border-white/30 pb-1 hover:border-white transition-colors duration-300"
                     >
                       View Resume
