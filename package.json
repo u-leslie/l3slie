@@ -7,7 +7,7 @@
     "dev": "vite",
     "preview": "vite preview",
     "build": "tsc -b && vite build",
-    "deploy": "npm run build && npx wrangler pages deploy dist",
+    "deploy": "npm run build && npx wrangler pages deploy dist --project-name=portfolio",
     "deploy:preview": "npm run build && npx wrangler pages deploy dist --project-name=portfolio",
     "lint": "eslint .",
     "prettier-fix": "prettier --write .",
