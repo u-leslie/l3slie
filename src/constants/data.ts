@@ -89,18 +89,18 @@ export const projects = [
   //   //   link:"https://csr.vercel.app",
   //   status: "Under Development phase",
   // },
-  {
-    year: "2024",
-    title: "RiseWell Website",
-    category: "RiseWell Organisation",
-    description: "Empowering wellness with a modern web experience",
-    link: "https://risewell-web.vercel.app",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+  // {
+  //   year: "2024",
+  //   title: "RiseWell Website",
+  //   category: "RiseWell Organisation",
+  //   description: "Empowering wellness with a modern web experience",
+  //   link: "https://risewell-web.vercel.app",
+  //   image:
+  //     "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
 
-    tech: ["Next.js", "Tailwindcss"],
-    status: "Under Development phase",
-  },
+  //   tech: ["Next.js", "Tailwindcss"],
+  //   status: "Under Development phase",
+  // },
 ];
 
 export const experiences = [
