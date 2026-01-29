@@ -106,7 +106,7 @@ export const projects = [
 export const experiences = [
   {
     year: "2024 - Present",
-    title: "Senior Frontend Developer",
+    title: "Frontend Developer",
     company: "Rwanda TVET Board (RTB)",
     description:
       "Developing and maintaining web applications using React, Next.js, and Tailwind CSS. Collaborating with cross-functional teams to deliver high-quality software solutions.",
