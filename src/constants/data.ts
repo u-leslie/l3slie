@@ -128,14 +128,14 @@ export const experiences = [
       "Working on cutting-edge web applications that drive social impact. Utilizing modern frontend technologies to create engaging user experiences.",
     tech: ["Wordpress","Elementor","WooCommerce"],
   },
-  {
-    year: "2022 - 2023",
-    title: "Frontend Developer",
-    company: "Topstrate Consulting",
-    description:
-      "Assisted in the development of user interfaces using React and improved website performance. Gained experience in responsive design and cross-browser compatibility.",
-    tech: ["Next Js","TailwindCss"],
-  },
+  // {
+  //   year: "2022 - 2023",
+  //   title: "Frontend Developer",
+  //   company: "Topstrate Consulting",
+  //   description:
+  //     "Assisted in the development of user interfaces using React and improved website performance. Gained experience in responsive design and cross-browser compatibility.",
+  //   tech: ["Next Js","TailwindCss"],
+  // },
   // {
   //   year: "2020 - 2021",
   //   title: "Full Stack Developer",
