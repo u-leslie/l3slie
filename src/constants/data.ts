@@ -77,7 +77,7 @@ export const projects = [
   //   status: "Under development phase",
   // },
   {
-    year: "2024",
+    year: "2025-2026",
     title: "SMIRC Platform",
     category: "Sustainable Management & Innovation Research Center",
     image:
