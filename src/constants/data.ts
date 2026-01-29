@@ -64,31 +64,31 @@ export const projects = [
 
     status: "Live",
   },
-  {
-    year: "2024 - 2025",
-    title: "Neza Architectural site",
-    category: "Architecture",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
-
-    description: "A website for a architectural company",
-    tech: ["ReactJS", "Framer Motion", "Tailwindcss"],
-    link: "https://neza-architects.vercel.app/",
-    status: "Under development phase",
-  },
   // {
-  //   year: "2024",
-  //   title: "CSR Platform",
-  //   category: "Corporate Social Responsibility",
+  //   year: "2024 - 2025",
+  //   title: "Neza Architectural site",
+  //   category: "Architecture",
   //   image:
   //     "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
 
-  //   description:
-  //     "E-learning platform for corporate social responsibility initiatives",
-  //   tech: ["Next.js", "Tailwindcss"],
-  //   //   link:"https://csr.vercel.app",
-  //   status: "Under Development phase",
+  //   description: "A website for a architectural company",
+  //   tech: ["ReactJS", "Framer Motion", "Tailwindcss"],
+  //   link: "https://neza-architects.vercel.app/",
+  //   status: "Under development phase",
   // },
+  {
+    year: "2024",
+    title: "SMIRC Platform",
+    category: "Sustainable Management & Innovation Research Center",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+
+    description:
+      "Platform for Sustainable Management & Innovation Research Center",
+    tech: ["Next.js", "Tailwindcss"],
+      link:"https://csr-front.vercel.app",
+    status: "Under Development phase",
+  },
   {
     year: "2025-2026",
     title: "RiseWell Website",
