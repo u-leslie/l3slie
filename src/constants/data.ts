@@ -105,6 +105,14 @@ export const projects = [
 
 export const experiences = [
   {
+  year: "2024 - Present",
+  title: "IT Support Specialist",
+  company: "Risewell Organisation",
+  description:
+    "Developed and maintained the organisation’s website and provided ongoing technical support. Assisted with website updates, troubleshooting technical issues, managing systems, and supporting staff with daily IT needs.",
+  tech: ["Web Dev","IT Support"],
+},
+  {
     year: "2024 - Present",
     title: "Frontend Developer",
     company: "Rwanda TVET Board (RTB)",
