@@ -21,6 +21,7 @@ import {
 
 import { Badge } from "../components/ui/badge.tsx";
 import { Button } from "../components/ui/button.tsx";
+import image01 from "../assets/image05.JPG";
 
 export default function Index() {
   const { theme, setTheme } = useTheme();
@@ -183,12 +184,33 @@ export default function Index() {
         {/* Hero Section */}
         <section className="min-h-screen flex flex-col justify-center items-center relative pt-24 overflow-hidden">
           <div className="max-w-7xl mx-auto w-full px-6 lg:px-16 relative z-10">
-          <motion.div
-              className="text-center"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 1 }}
-          >
+            <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+              {/* Image - 2/5 width */}
+              <motion.div
+                className="hidden lg:block w-full lg:w-2/5 flex-shrink-0"
+                initial={{ opacity: 0, x: -40 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.5, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+              >
+                <div className="relative w-full aspect-[3/4] overflow-hidden">
+                  <motion.img
+                    src={image01}
+                    alt="Anne Leslie UHIRIWE"
+                    className="w-full h-full object-cover object-center opacity-50"
+                    initial={{ scale: 1.1 }}
+                    animate={{ scale: 1 }}
+                    transition={{ delay: 0.7, duration: 1, ease: [0.22, 1, 0.36, 1] }}
+                  />
+                </div>
+              </motion.div>
+
+              {/* Content - 3/5 width */}
+              <motion.div
+                className="w-full lg:w-3/5 text-center lg:text-left"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.5, duration: 1 }}
+              >
             <motion.div
                 className="mb-6 text-xs font-light tracking-[0.2em] uppercase text-black/60 dark:text-white/60"
                 initial={{ y: 20, opacity: 0 }}
@@ -229,23 +251,23 @@ export default function Index() {
               </motion.h1>
             </div>
 
-            <motion.p
-                className="text-lg font-light leading-relaxed text-black/70 dark:text-white/70 max-w-2xl mx-auto mt-12"
-              initial={{ y: 30, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 1.5, duration: 0.8 }}
-            >
-                I'm Uhiriwe Anne Leslie, creating digital products where design
-              and code come together to deliver smooth, user-friendly
-                experiences.
-            </motion.p>
+                <motion.p
+                  className="text-lg font-light leading-relaxed text-black/70 dark:text-white/70 max-w-2xl lg:max-w-none mx-auto lg:mx-0 mt-12"
+                  initial={{ y: 30, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ delay: 1.5, duration: 0.8 }}
+                >
+                  I'm Uhiriwe Anne Leslie, creating digital products where design
+                  and code come together to deliver smooth, user-friendly
+                  experiences.
+                </motion.p>
 
-            <motion.div
-                className="flex items-center justify-center gap-6 mt-16"
-              initial={{ y: 30, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 1.8, duration: 0.8 }}
-              >
+                <motion.div
+                  className="flex items-center justify-center lg:justify-start gap-6 mt-16"
+                  initial={{ y: 30, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ delay: 1.8, duration: 0.8 }}
+                >
                 <motion.a
                   href="#work"
                   whileHover={{ scale: 1.02 }}
@@ -264,11 +286,11 @@ export default function Index() {
                   whileHover={{ x: 8 }}
                 transition={{ duration: 0.3 }}
               >
-                Get in touch
-              </motion.a>
+                  Get in touch
+                </motion.a>
+              </motion.div>
             </motion.div>
-          </motion.div>
-
+            </div>
           </div>
         </section>
 
