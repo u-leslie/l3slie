@@ -105,7 +105,7 @@ export const projects = [
 
 export const experiences = [
   {
-  year: "2024 - Present",
+  year: "2025 - Present",
   title: "IT Support Specialist",
   company: "Risewell Organisation",
   description:
