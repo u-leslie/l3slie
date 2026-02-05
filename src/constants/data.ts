@@ -60,7 +60,7 @@ export const projects = [
     description:
       "A site where poetry meets photography to create a beautiful and unique experience",
     tech: ["ReactJS", "Next JS"],
-    link: "https://artsuleslie.vercel.app/",
+    link: "https://art.lslie.space/",
 
     status: "Live",
   },
@@ -79,7 +79,7 @@ export const projects = [
   {
     year: "2025-2026",
     title: "SMIRC Platform",
-    category: "Sustainable Management & Innovation Research Center",
+    category: "SMIRC",
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
 
