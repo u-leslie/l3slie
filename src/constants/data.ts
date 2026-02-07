@@ -24,18 +24,18 @@ export const projects = [
 
     status: "Live",
   },
-  {
-    year: "2024",
-    title: "Dunamis Organisation Website",
-    category: "Dunamis Organisation",
-    description: "Dunamis Organisation website",
-    link: "https://dunamis-web.vercel.app",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+  // {
+  //   year: "2024",
+  //   title: "Dunamis Organisation Website",
+  //   category: "Dunamis Organisation",
+  //   description: "Dunamis Organisation website",
+  //   link: "https://dunamis-web.vercel.app",
+  //   image:
+  //     "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
 
-    tech: ["Next.js", "Tailwindcss"],
-    status: "Under Development phase",
-  },
+  //   tech: ["Next.js", "Tailwindcss"],
+  //   status: "Under Development phase",
+  // },
   // {
   //   year: "2024",
   //   title: "E-Portfolio Platform",
@@ -48,6 +48,18 @@ export const projects = [
   //   //   link:"https://e-portfolio.rtb.gov.rw",
   //   status: "Under Development phase",
   // },
+   {
+    year: "2025-2026",
+    title: "RiseWell Website",
+    category: "RiseWell Organisation",
+    description: "RiseWell wellness website",
+    link: "http://www.risewell.org.rw",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+
+    tech: ["Next.js", "Tailwindcss"],
+    status: "live",
+  },
   {
     year: "2024 - 2025",
     title: "Artistry by Uleslie",
@@ -84,18 +96,6 @@ export const projects = [
     tech: ["Next.js", "Tailwindcss"],
       link:"https://csr-front.vercel.app",
     status: "Under Development phase",
-  },
-  {
-    year: "2025-2026",
-    title: "RiseWell Website",
-    category: "RiseWell Organisation",
-    description: "RiseWell wellness website",
-    link: "http://www.risewell.org.rw",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
-
-    tech: ["Next.js", "Tailwindcss"],
-    status: "live",
   },
 ];
 
