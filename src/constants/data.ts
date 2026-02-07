@@ -6,8 +6,7 @@ export const projects = [
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
 
-    description:
-      "Revolutionary TVET grant management experience with modern web app",
+    description: "TVET grant management system",
     tech: ["React", "Next JS", "TailwindCss"],
     link: "http://197.243.20.222:5800/",
     status: "Live",
@@ -19,8 +18,7 @@ export const projects = [
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
 
-    description:
-      "Comprehensive TVET management portal for streamlined operations",
+    description: "TVET management portal",
     tech: ["ReactJS", "Next JS"],
     link: "https://tvetmanagement.rtb.gov.rw/",
 
@@ -30,7 +28,7 @@ export const projects = [
     year: "2024",
     title: "Dunamis Organisation Website",
     category: "Dunamis Organisation",
-    description: "A website for the Dunamis Organisation",
+    description: "Dunamis Organisation website",
     link: "https://dunamis-web.vercel.app",
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
@@ -57,8 +55,7 @@ export const projects = [
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
 
-    description:
-      "A site where poetry meets photography to create a beautiful and unique experience",
+    description: "Poetry and photography platform",
     tech: ["ReactJS", "Next JS"],
     link: "https://art.lslie.space/",
 
@@ -83,8 +80,7 @@ export const projects = [
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
 
-    description:
-      "Platform for Sustainable Management & Innovation Research Center",
+    description: "SMIRC research platform",
     tech: ["Next.js", "Tailwindcss"],
       link:"https://csr-front.vercel.app",
     status: "Under Development phase",
@@ -93,7 +89,7 @@ export const projects = [
     year: "2025-2026",
     title: "RiseWell Website",
     category: "RiseWell Organisation",
-    description: "Empowering wellness with a modern web experience",
+    description: "RiseWell wellness website",
     link: "http://www.risewell.org.rw",
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
